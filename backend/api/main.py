@@ -26,7 +26,9 @@ from .routers import (
     mining,
     portfolio,
     backtest,
-    data
+    data,
+    scoring,
+    search,
 )
 
 
@@ -105,6 +107,8 @@ app.include_router(mining.router, prefix="/api/mining", tags=["因子挖掘"])
 app.include_router(portfolio.router, prefix="/api/portfolio", tags=["组合分析"])
 app.include_router(backtest.router, prefix="/api/backtest", tags=["策略回测"])
 app.include_router(data.router, prefix="/api/data", tags=["数据管理"])
+app.include_router(scoring.router, prefix="/api/scoring", tags=["时序打分"])
+app.include_router(search.router, prefix="/api/search", tags=["策略搜索"])
 
 
 @app.get("/")
@@ -123,13 +127,6 @@ async def health_check():
     """健康检查"""
     return {"status": "healthy"}
 
-
-# 全局异常处理
-# 覆盖FastAPI的默认JSON响应编码器
-@app.on_event("startup")
-async def startup_event():
-    """应用启动事件 - 覆盖默认JSON编码器"""
-    app.json_encoder = NumpyJSONEncoder
 
 @app.exception_handler(Exception)
 async def global_exception_handler(request, exc):

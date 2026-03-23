@@ -50,6 +50,16 @@ class Settings(BaseSettings):
     # 滚动窗口配置
     ROLLING_WINDOW: int = 252  # 一年交易日
 
+    # 时序打分配置
+    SCORING_MAX_WORKERS: int = 4
+    SCORING_SYNC_THRESHOLD: int = 20
+    SCORING_RESULTS_DIR: Path = Path("data/reports/scoring_jobs")
+    SCORING_LOOKBACK_DAYS: int = 372
+
+    # 评估链路质量门禁配置
+    EVAL_MIN_CODE_COVERAGE: float = 0.85
+    EVAL_MIN_IC_SAMPLES: int = 30
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         # 创建必要的目录
@@ -58,6 +68,7 @@ class Settings(BaseSettings):
         self.DB_DIR.mkdir(parents=True, exist_ok=True)
         self.REPORTS_DIR.mkdir(parents=True, exist_ok=True)
         self.AKSHARE_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        self.SCORING_RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # 全局配置实例
