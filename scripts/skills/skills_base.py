@@ -24,7 +24,7 @@ class SkillsClient:
         Args:
             base_url: API基地址，默认http://localhost:8000/api
         """
-        self.base_url = base_url
+        self.base_url = base_url.rstrip("/") + "/"
         self.session = requests.Session()
         self.session.headers.update({
             "Content-Type": "application/json",

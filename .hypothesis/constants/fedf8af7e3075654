@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/factor_summary_service.py
+# hypothesis_version: 6.151.9
+
+[0.0, 400, '\n## 稳定性分析\n', 'A', 'A+', 'B', 'B+', 'C', 'C+', 'D', 'IC>0占比', 'IC均值', 'IC标准差', 'IC绝对值均值', 'IR', 'N/A', 'Unknown', 'basic_stats', 'count', 'distribution', 'error', 'factor_name', 'factors', 'grade', 'ic_abs_mean', 'ic_mean', 'ic_positive_ratio', 'ic_stats', 'ic_std', 'ic_summary', 'ir', 'is_stationary', 'max', 'mean', 'median', 'min', 'missing_count', 'name', 'p_value', 'quality_score', 'ranking', 'rolling', 'rolling_stability', 'score', 'stability_score', 'stability_summary', 'stable_ratio', 'std', 'time_series', '无IC分析数据']

@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/factor_profile_registry_service.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.999, 1.001, 100, 504, 'champions', 'config', 'data', 'factors', 'id', 'inline_profiles', 'mode', 'params', 'percentile_window', 'profiles', 'r', 'role', 'search_spaces', 'signal', 'temporal_pool', 'top_n', 'utf-8', 'weight']

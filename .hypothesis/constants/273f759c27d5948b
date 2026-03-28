@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/api/routers/factors.py
+# hypothesis_version: 6.151.9
+
+[0.03, 0.5, 0.7, 404, 500, '/', '/batch-generate', '/preselect', '/stats', '/validate', '/{factor_id}', '/{factor_id}/copy', '_', 'arithmetic', 'category', 'code', 'data', 'description', 'expression', 'factors', 'formula_type', 'generated_count', 'id', 'message', 'name', 'selected', 'source', 'statistics', 'success', 'technical', 'total', 'total_possible', 'user', 'valid', '代码不能为空', '代码包含非法控制字符', '因子不存在', '因子不存在或删除失败', '因子创建成功', '因子删除成功', '因子更新成功', '验证通过']

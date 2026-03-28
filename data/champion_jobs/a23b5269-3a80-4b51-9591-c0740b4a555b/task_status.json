@@ -1,0 +1,8 @@
+{
+  "task_id": "a23b5269-3a80-4b51-9591-c0740b4a555b",
+  "status": "failed",
+  "message": "",
+  "updated_at": "2026-03-22T07:51:43.112252+00:00",
+  "champion": null,
+  "error": "时间跨度不足 18 个月（实际约 5.0 个月）。请将 start_date 和 end_date 之间的跨度设置为至少 18 个月，以保证能生成完整的 walk-forward 窗口。"
+}

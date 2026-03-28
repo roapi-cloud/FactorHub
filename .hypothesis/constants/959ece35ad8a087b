@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/models/factor.py
+# hypothesis_version: 6.151.9
+
+[100, 255, 500, 1000, 'analysis_cache', 'cache_key', 'category', 'code', 'created_at', 'description', 'end_date', 'factor_names', 'factors', 'id', 'is_active', 'name', 'result_data', 'source', 'start_date', 'stock_codes', 'updated_at', 'user']

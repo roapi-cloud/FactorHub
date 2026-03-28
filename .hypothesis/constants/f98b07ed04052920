@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/cache_service.py
+# hypothesis_version: 6.151.9
+
+[0.0, '_', 'hit_rate', 'hits', 'misses', 'rb', 'wb']

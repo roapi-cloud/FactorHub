@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/factor_exposure_service.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.2, 0.4, 0.6, 0.8, 100, '0-20%', '20-40%', '40-60%', '60-80%', '80-100%', 'bins', 'count', 'counts', 'current', 'current_value', 'cv', 'dates', 'deciles', 'distribution', 'error', 'histogram', 'latest_mean', 'latest_std', 'lower_band', 'max', 'mean', 'min', 'percentile', 'percentile_meaning', 'percentiles', 'q20', 'q40', 'q60', 'q80', 'quintiles', 'rolling_max', 'rolling_mean', 'rolling_min', 'rolling_std', 'std', 'stock_code', 'stock_count', 'stocks_analyzed', 'upper_band', 'values', '没有可用的因子数据']

@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/api/routers/mining.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.001, 0.005, 0.01, 0.03, 0.1, 0.3, 0.5, 0.7, 0.85, 100, 400, 404, 500, '/genetic', '/results/{task_id}', '/status/{task_id}', 'RSI(close, 14)', 'SMA(close, 20)', 'average', 'avg', 'avg_fitness', 'best', 'best_factors', 'best_fitness', 'close', 'close / open', 'completed', 'current_generation', 'data', 'error', 'expression', 'factors', 'failed', 'fitness', 'fitness_history', 'generations', 'ic', 'ic_mean', 'ic_validation', 'ir', 'ir_validation', 'logbook', 'max', 'message', 'name', 'pending', 'progress', 'result', 'return', 'running', 'status', 'success', 'task_id', 'total_generations', 'validation', 'volume / 1000000', '任务不存在', '挖掘任务已启动', '挖掘失败', '无法计算任何有效的因子值', '未获取到有效数据']

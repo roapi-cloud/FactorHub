@@ -1,0 +1,119 @@
+{
+  "champion_id": "1b6f7ba5-7a12-42b7-98ba-680fc8de17a2",
+  "scope_type": "single_stock",
+  "scope_key": "002035",
+  "mode": "temporal_pool",
+  "profile_id": "search_8b8e2a7c",
+  "config": {
+    "candidate_id": "8b8e2a7c-435b-4246-9f9c-93a7ffe7bb44",
+    "id": "search_8b8e2a7c",
+    "mode": "temporal_pool",
+    "description": "随机搜索候选 8b8e2a7c",
+    "source": "search_result",
+    "version": "1.0",
+    "factors": [
+      {
+        "name": "rsi_14",
+        "direction": 1,
+        "weight": 0.303542,
+        "role": "signal"
+      },
+      {
+        "name": "stochastic_d",
+        "direction": 1,
+        "weight": 0.273711,
+        "role": "signal"
+      },
+      {
+        "name": "force_index_ma",
+        "direction": 1,
+        "weight": 0.076282,
+        "role": "signal"
+      },
+      {
+        "name": "volume_ma_ratio",
+        "direction": 1,
+        "weight": 0.346465,
+        "role": "signal"
+      },
+      {
+        "name": "atr_norm",
+        "direction": -1,
+        "weight": 0.0,
+        "role": "risk_filter",
+        "threshold": 0.8
+      }
+    ],
+    "params": {
+      "rebalance": "W-FRI",
+      "hold_days": 20,
+      "top_n": 5,
+      "score_threshold": 60,
+      "percentile_window": 252
+    }
+  },
+  "metrics": {
+    "annual_return": 0.3071716750804406,
+    "sharpe": 1.0011101827031144,
+    "max_drawdown": -0.05987287392074143,
+    "win_rate": 0.5085327351279495,
+    "volatility": 0.17675078995174953,
+    "total_return": 0.07540050335991366,
+    "active_days": 23.714285714285715,
+    "trading_days": 61.0,
+    "active_ratio": 0.3823007296747261,
+    "rebalance_count": 3.857142857142857,
+    "active_rebalance_count": 1.4285714285714286
+  },
+  "stability_score": 54.94829346672255,
+  "selected_at": "2026-03-23T05:57:35Z",
+  "effective_from": "2026-03-21",
+  "report_path": "data/reports/strategy_search/06ab3183-3204-4713-972c-e6adc107d3e3",
+  "inline_profile": {
+    "id": "search_8b8e2a7c",
+    "mode": "temporal_pool",
+    "description": "随机搜索候选 8b8e2a7c",
+    "source": "search_result",
+    "version": "1.0",
+    "factors": [
+      {
+        "name": "rsi_14",
+        "direction": 1,
+        "weight": 0.303542,
+        "role": "signal"
+      },
+      {
+        "name": "stochastic_d",
+        "direction": 1,
+        "weight": 0.273711,
+        "role": "signal"
+      },
+      {
+        "name": "force_index_ma",
+        "direction": 1,
+        "weight": 0.076282,
+        "role": "signal"
+      },
+      {
+        "name": "volume_ma_ratio",
+        "direction": 1,
+        "weight": 0.346465,
+        "role": "signal"
+      },
+      {
+        "name": "atr_norm",
+        "direction": -1,
+        "weight": 0.0,
+        "role": "risk_filter",
+        "threshold": 0.8
+      }
+    ],
+    "params": {
+      "rebalance": "W-FRI",
+      "hold_days": 20,
+      "top_n": 5,
+      "score_threshold": 60,
+      "percentile_window": 252
+    }
+  }
+}

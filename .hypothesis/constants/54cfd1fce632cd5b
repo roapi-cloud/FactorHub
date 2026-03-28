@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/temporal_scoring_service.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.14, 0.16, 0.18, 0.2, 0.22, 0.3, 0.35, 0.8, 1.0, 100.0, 100, 252, 372, 3600, '"', '""', '%Y-%m-%d', ',', 'SCORING_MAX_WORKERS', 'SCORING_RESULTS_DIR', 'a', 'atr_norm', 'bollinger_position', 'close', 'code', 'code,error\n', 'completed', 'completed_at', 'daily_scores.csv', 'date', 'date,code,score\n', 'db', 'error', 'errors.csv', 'factors', 'failed', 'failed_count', 'fallback', 'force_index_ma', 'high_volatility', 'input_codes.csv', 'liquidity_risk', 'momentum_20', 'nan', 'pcts', 'pending', 'price_vs_sma20', 'price_vwma_ratio', 'processed', 'progress', 'rank', 'records', 'running', 'score', 'scoring_jobs', 'started_at', 'status', 'status.json', 'status.json.tmp', 'stochastic_d', 'success_count', 'task_id', 'total', 'trade_date', 'trend_break', 'updated_at', 'utf-8', 'volume', 'volume_ma_ratio', '任务尚未完成', '因子表达式已从 DB 刷新成功']

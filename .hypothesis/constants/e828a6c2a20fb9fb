@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/api/routers/search.py
+# hypothesis_version: 6.151.9
+
+[202, 400, 404, '..', '/', '/pools', '/profiles', '/search-spaces', 'SEARCH_SPACE_IDS', 'champion', 'champion-search', 'completed', 'created_at', 'cross_sectional', 'data/champion_jobs', 'default_search_space', 'error', 'failed', 'id', 'list_pools', 'message', 'pending', 'pools', 'profiles', 'running', 'scope_key', 'scope_type', 'search_spaces', 'single_stock', 'status', 'success', 'task_id', 'task_status.json', 'temporal_default', 'temporal_pool', 'updated_at', '任务已创建，等待执行', '回测开始日期 YYYY-MM-DD', '回测结束日期 YYYY-MM-DD', '截面 universe 名称', '搜索空间 ID', '股票代码', '股票代码列表']

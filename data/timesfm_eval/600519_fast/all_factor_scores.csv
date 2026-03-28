@@ -1,0 +1,5 @@
+﻿factor_name,historical_score,recommended_direction,predictive_corr_mean,abs_predictive_corr_mean,horizon_stability,regime_predictive_corr_mean,regime_abs_predictive_corr_mean,sign_consistency,selected,redundant_with,redundancy_correlation,abs_ic_mean,ic_mean,abs_ir,regime_abs_ic_mean
+roc_10,96.25,-1,-0.230259,0.230259,3.286775,-0.310166,0.310166,1.0,True,,,0.230259,-0.230259,3.286775,0.310166
+macd_hist,75.0,-1,-0.19359,0.19359,2.635429,-0.207743,0.207743,1.0,False,roc_10,0.907678,0.19359,-0.19359,2.635429,0.207743
+momentum_20,53.75,-1,-0.15909,0.15909,2.540675,-0.143034,0.145886,1.0,True,,,0.15909,-0.15909,2.540675,0.145886
+timesfm_return_1d_fast,25.0,-1,-0.131989,0.158463,1.081516,-0.09877,0.129019,0.75,True,,,0.158463,-0.131989,1.081516,0.129019

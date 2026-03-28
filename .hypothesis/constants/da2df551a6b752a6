@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/api/routers/data.py
+# hypothesis_version: 6.151.9
+
+[404, 500, '/cache/cleanup', '/cache/clear', '/cache/stats', '/stock/{code}', 'cleaned_count', 'cleared_count', 'columns', 'data', 'index', 'message', 'success', '未获取到数据']

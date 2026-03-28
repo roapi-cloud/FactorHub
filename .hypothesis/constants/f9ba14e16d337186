@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/repositories/cache_repository.py
+# hypothesis_version: 6.151.9
+
+[1024, 'active_count', 'expired_count', 'total_access_count', 'total_count', 'total_size', 'total_size_mb']

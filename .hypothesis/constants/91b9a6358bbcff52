@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/repositories/factor_repository.py
+# hypothesis_version: 6.151.9
+
+['preset', 'user', '预置因子不能删除']

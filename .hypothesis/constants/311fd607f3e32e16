@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/repositories/backtest_repository.py
+# hypothesis_version: 6.151.9
+
+[0.0, 1000000, 'action', 'amount', 'annual_return', 'avg_return', 'avg_sharpe', 'benchmark_return', 'buy', 'calmar_ratio', 'commission', 'end_date', 'equity_curve', 'excess_return', 'factor_combination', 'factor_value', 'final_capital', 'initial_capital', 'max_drawdown', 'price', 'quantile_returns', 'shares', 'sharpe_ratio', 'sortino_ratio', 'start_date', 'stock_code', 'strategy_name', 'to_dict', 'total_count', 'total_return', 'trade_date', 'trades_count', 'volatility', 'win_rate', '未命名策略']

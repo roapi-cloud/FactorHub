@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/api/routers/analysis.py
+# hypothesis_version: 6.151.9
+
+[252, 404, 500, '%Y-%m-%d', '/attribution', '/calculate', '/decay', '/effectiveness', '/exposure', '/ic', '/monitoring', '/multi-period', '/stability', 'IC分析未返回有效统计数据', 'close', 'count', 'data', 'dates', 'decay_analysis', 'factor_name', 'factor_values', 'ic_ir', 'ic_mean', 'ic_stats', 'max', 'mean', 'message', 'metadata', 'min', 'period', 'period_days', 'statistics', 'std', 'success', 'warnings', '未能获取有效的因子数据', '缓存中的数据无效，重新计算IC分析']

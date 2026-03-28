@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/enhanced_analysis_service.py
+# hypothesis_version: 6.151.9
+
+[0.01, 0.05, 0.95, 1.0, 'close', 'confidence_interval', 'error', 'factor', 'factors', 'future_return', 'ic', 'ic_after', 'ic_before', 'ic_series', 'ic_significance', 'improvement', 'industry', 'interpretation', 'is_significant', 'level', 'lower', 'market_cap', 'method', 'n_samples', 'neutralization', 'p_value', 'return', 'rolling_stability', 'significance_level', 'stability', 'summary', 't_statistic', 'upper', '不显著 (p>=0.05)', '市值中性化', '显著性 (p<0.05)', '有效数据不足（至少需要10个数据点）', '极高显著性 (p<0.01)', '行业中性化']

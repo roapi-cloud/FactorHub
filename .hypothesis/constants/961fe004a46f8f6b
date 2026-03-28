@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/factor_version_service.py
+# hypothesis_version: 6.151.9
+
+['code', 'code_changed', 'code_content', 'description', 'description_changed', 'v1.0', 'version1', 'version2', '不能删除当前版本', '手动创建版本', '版本不存在']

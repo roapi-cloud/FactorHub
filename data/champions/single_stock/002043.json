@@ -1,0 +1,119 @@
+{
+  "champion_id": "5a88e3ae-b075-47da-bd3a-6e8a15053cba",
+  "scope_type": "single_stock",
+  "scope_key": "002043",
+  "mode": "temporal_pool",
+  "profile_id": "search_66ef638d",
+  "config": {
+    "candidate_id": "66ef638d-ff45-487f-b408-b3b558811780",
+    "id": "search_66ef638d",
+    "mode": "temporal_pool",
+    "description": "随机搜索候选 66ef638d",
+    "source": "search_result",
+    "version": "1.0",
+    "factors": [
+      {
+        "name": "price_vs_sma20",
+        "direction": 1,
+        "weight": 0.256705,
+        "role": "signal"
+      },
+      {
+        "name": "rsi_14",
+        "direction": 1,
+        "weight": 0.188926,
+        "role": "signal"
+      },
+      {
+        "name": "deviation_from_ma20",
+        "direction": 1,
+        "weight": 0.342377,
+        "role": "signal"
+      },
+      {
+        "name": "volume_ma_ratio",
+        "direction": 1,
+        "weight": 0.211992,
+        "role": "signal"
+      },
+      {
+        "name": "atr_norm",
+        "direction": -1,
+        "weight": 0.0,
+        "role": "risk_filter",
+        "threshold": 0.8
+      }
+    ],
+    "params": {
+      "rebalance": "2W-FRI",
+      "hold_days": 10,
+      "top_n": 5,
+      "score_threshold": 65,
+      "percentile_window": 252
+    }
+  },
+  "metrics": {
+    "annual_return": 0.3422178756734303,
+    "sharpe": 1.7555087907071933,
+    "max_drawdown": -0.04541011738132599,
+    "win_rate": 0.5359803921568627,
+    "volatility": 0.19252329604272972,
+    "total_return": 0.08332564392925476,
+    "active_days": 17.571428571428573,
+    "trading_days": 61.0,
+    "active_ratio": 0.28649857984715255,
+    "rebalance_count": 6.857142857142857,
+    "active_rebalance_count": 1.8571428571428572
+  },
+  "stability_score": 61.83008999395828,
+  "selected_at": "2026-03-23T06:38:30Z",
+  "effective_from": "2026-03-21",
+  "report_path": "data/reports/strategy_search/2c09499e-dabc-44cc-9416-7433f35f2aa1",
+  "inline_profile": {
+    "id": "search_66ef638d",
+    "mode": "temporal_pool",
+    "description": "随机搜索候选 66ef638d",
+    "source": "search_result",
+    "version": "1.0",
+    "factors": [
+      {
+        "name": "price_vs_sma20",
+        "direction": 1,
+        "weight": 0.256705,
+        "role": "signal"
+      },
+      {
+        "name": "rsi_14",
+        "direction": 1,
+        "weight": 0.188926,
+        "role": "signal"
+      },
+      {
+        "name": "deviation_from_ma20",
+        "direction": 1,
+        "weight": 0.342377,
+        "role": "signal"
+      },
+      {
+        "name": "volume_ma_ratio",
+        "direction": 1,
+        "weight": 0.211992,
+        "role": "signal"
+      },
+      {
+        "name": "atr_norm",
+        "direction": -1,
+        "weight": 0.0,
+        "role": "risk_filter",
+        "threshold": 0.8
+      }
+    ],
+    "params": {
+      "rebalance": "2W-FRI",
+      "hold_days": 10,
+      "top_n": 5,
+      "score_threshold": 65,
+      "percentile_window": 252
+    }
+  }
+}

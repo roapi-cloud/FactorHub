@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/models/cache_metadata.py
+# hypothesis_version: 6.151.9
+
+[255, 500, 'access_count', 'cache_key', 'cache_metadata', 'created_at', 'expired', 'file_path', 'id', 'is_expired', 'last_accessed', 'size', 'ttl']

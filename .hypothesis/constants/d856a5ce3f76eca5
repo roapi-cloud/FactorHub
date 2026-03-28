@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/strategy_search_service.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.4, 0.8, 1.0, 252, '1.0', 'W-FRI', 'candidate_id', 'description', 'direction', 'factor_groups', 'factor_name', 'factors', 'hold_days', 'hold_days_choices', 'id', 'max_factors', 'max_per_group', 'min_factors', 'mode', 'n_candidates', 'name', 'params', 'percentile_window', 'rebalance', 'rebalance_choices', 'risk_factors', 'risk_filter', 'role', 'score_threshold', 'search_result', 'signal', 'source', 'temporal_pool', 'threshold', 'top_n', 'top_n_choices', 'version', 'weight', '（个股因子注入）']

@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/recent_factor_mining_service.py
+# hypothesis_version: 6.151.9
+
+[0.0, 1e-12, 1e-08, 0.1, 0.15, 0.2, 0.25, 0.35, 0.5, 0.55, 0.85, 1.0, 100, 240, '%Y-%m-%d', '_regime', 'abs_ic_mean', 'abs_ir', 'actual_end_date', 'all_factor_scores', 'average', 'close', 'correlation', 'coverage_ratio', 'current_regime', 'date', 'downtrend', 'eval_days', 'eval_start_date', 'factor_count', 'factor_count_scored', 'factor_count_total', 'factor_name', 'generated_at', 'horizon_count', 'horizons', 'horizons 必须全部为正整数', 'ic_mean', 'left', 'lookback_days', 'mean', 'metadata', 'min_samples', 'nunique', 'object', 'range', 'records', 'redundant_with', 'regime_abs_ic_mean', 'regime_ic_mean', 'regime_sign_match', 'requested_end_date', 'score', 'selected', 'sign_consistency', 'start_date', 'stock_code', 'stock_codes 不能为空', 'stock_coverage', 'stock_score', 'top_factors', 'top_k', 'unknown', 'uptrend', 'x', 'y', '未找到任何启用因子']

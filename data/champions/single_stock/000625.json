@@ -1,0 +1,107 @@
+{
+  "champion_id": "4c2defe8-a07f-4d70-82e3-05a9fe4751c5",
+  "scope_type": "single_stock",
+  "scope_key": "000625",
+  "mode": "temporal_pool",
+  "profile_id": "search_da900106",
+  "config": {
+    "candidate_id": "da900106-c91c-4549-af15-b1723624d265",
+    "id": "search_da900106",
+    "mode": "temporal_pool",
+    "description": "随机搜索候选 da900106",
+    "source": "search_result",
+    "version": "1.0",
+    "factors": [
+      {
+        "name": "momentum_20",
+        "direction": 1,
+        "weight": 0.244106,
+        "role": "signal"
+      },
+      {
+        "name": "price_vs_sma20",
+        "direction": 1,
+        "weight": 0.370458,
+        "role": "signal"
+      },
+      {
+        "name": "volume_ma_ratio",
+        "direction": 1,
+        "weight": 0.385436,
+        "role": "signal"
+      },
+      {
+        "name": "atr_norm",
+        "direction": -1,
+        "weight": 0.0,
+        "role": "risk_filter",
+        "threshold": 0.8
+      }
+    ],
+    "params": {
+      "rebalance": "2W-FRI",
+      "hold_days": 5,
+      "top_n": 15,
+      "score_threshold": 65,
+      "percentile_window": 252
+    }
+  },
+  "metrics": {
+    "annual_return": -0.016905450674880963,
+    "sharpe": 0.060865309642778954,
+    "max_drawdown": -0.060571283237769426,
+    "win_rate": 0.4393711551606288,
+    "volatility": 0.15473740824954502,
+    "total_return": -0.006834385080678256,
+    "active_days": 12.285714285714286,
+    "trading_days": 61.0,
+    "active_ratio": 0.2001277242953933,
+    "rebalance_count": 13.142857142857142,
+    "active_rebalance_count": 2.5714285714285716
+  },
+  "stability_score": 21.098701197038924,
+  "selected_at": "2026-03-23T05:55:03Z",
+  "effective_from": "2026-03-21",
+  "report_path": "data/reports/strategy_search/67aa18b6-89c0-4c98-8b61-8d435025aeec",
+  "inline_profile": {
+    "id": "search_da900106",
+    "mode": "temporal_pool",
+    "description": "随机搜索候选 da900106",
+    "source": "search_result",
+    "version": "1.0",
+    "factors": [
+      {
+        "name": "momentum_20",
+        "direction": 1,
+        "weight": 0.244106,
+        "role": "signal"
+      },
+      {
+        "name": "price_vs_sma20",
+        "direction": 1,
+        "weight": 0.370458,
+        "role": "signal"
+      },
+      {
+        "name": "volume_ma_ratio",
+        "direction": 1,
+        "weight": 0.385436,
+        "role": "signal"
+      },
+      {
+        "name": "atr_norm",
+        "direction": -1,
+        "weight": 0.0,
+        "role": "risk_filter",
+        "threshold": 0.8
+      }
+    ],
+    "params": {
+      "rebalance": "2W-FRI",
+      "hold_days": 5,
+      "top_n": 15,
+      "score_threshold": 65,
+      "percentile_window": 252
+    }
+  }
+}

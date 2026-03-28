@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/factor_monitoring_service.py
+# hypothesis_version: 6.151.9
+
+[1.0, 2.0, 'actual_bins', 'bin_edges', 'bin_labels', 'breakpoints', 'data_length', 'dates', 'dominant_periods', 'drop', 'error', 'frequencies', 'frequency', 'interpretation', 'lower_band', 'matrix', 'method', 'num_breaks', 'period_days', 'power', 'powers', 'rolling_chart', 'rolling_mean', 'rolling_std', 'seasonality', 'std_multiplier', 'structural_break', 'threshold', 'transition_matrix', 'upper_band', 'values', 'window', '没有可用的因子数据']

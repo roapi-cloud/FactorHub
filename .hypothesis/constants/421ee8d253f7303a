@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/api/routers/search.py
+# hypothesis_version: 6.151.9
+
+[0.0, 202, 400, 404, '%Y-%m-%dT%H:%M:%SZ', '..', '/', '/champion/jobs', '/profiles', '/search-spaces', 'best_strategy.json', 'champion', 'champion_id', 'completed', 'completed_at', 'error', 'evaluated_candidates', 'id', 'leaderboard', 'pending', 'profiles', 'progress', 'report_path', 'scope_key', 'scope_type', 'search_space_id', 'search_spaces', 'single_stock', 'started_at', 'status', 'stock_group', 'success', 'task_id', 'task_status.json', 'temporal_pool', 'total_candidates', 'utf-8']

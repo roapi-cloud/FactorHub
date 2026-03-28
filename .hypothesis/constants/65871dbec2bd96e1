@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/data_service.py
+# hypothesis_version: 6.151.9
+
+['%Y-%m-%d', '-', '.SH', '.SZ', '0', '3', '6', '9', 'DEFAULT@SECLEVEL=1', 'amount', 'amplitude', 'change', 'close', 'coerce', 'date', 'finance.sina.com.cn', 'high', 'hq.sinajs.cn', 'https://', 'low', 'open', 'pct_change', 'proxies', 'qfq', 'sh', 'ssl_context', 'sz', 'timeout', 'turnover', 'verify', 'volume', '开盘', '成交量', '成交额', '振幅', '换手率', '收盘', '日期', '最低', '最高', '涨跌幅', '涨跌额']

@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/statistics_service.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.05, 0.95, 1.0, 120, 252, '.*invalid value.*', 'M', '^2', 'annual_return', 'autocorrelations', 'avg_turnover', 'close', 'confidence_interval', 'correlation', 'expected_direction', 'feature_importance', 'feature_info', 'greater', 'ignore', 'increasing', 'index', 'interaction_features', 'ir', 'is_interaction', 'is_monotonic', 'is_significant', 'is_squared', 'layer_means', 'layer_names', 'less', 'mean', 'mean_abs_autocorr', 'mean_ic', 'p_value', 'sharpe', 'std', 'std_ic', 't_statistic', 'turnover_rate', 'win_rate', '正相关', '负相关']

@@ -1,0 +1,119 @@
+{
+  "champion_id": "d8804231-e373-433c-a554-a5bf653f3456",
+  "scope_type": "single_stock",
+  "scope_key": "600132",
+  "mode": "temporal_pool",
+  "profile_id": "search_babd9558",
+  "config": {
+    "candidate_id": "babd9558-6ec8-47bf-9071-85339f5d906e",
+    "id": "search_babd9558",
+    "mode": "temporal_pool",
+    "description": "随机搜索候选 babd9558",
+    "source": "search_result",
+    "version": "1.0",
+    "factors": [
+      {
+        "name": "roc_10",
+        "direction": 1,
+        "weight": 0.202048,
+        "role": "signal"
+      },
+      {
+        "name": "price_vs_sma20",
+        "direction": 1,
+        "weight": 0.115425,
+        "role": "signal"
+      },
+      {
+        "name": "cci_20",
+        "direction": 1,
+        "weight": 0.341136,
+        "role": "signal"
+      },
+      {
+        "name": "volume_ma_ratio",
+        "direction": 1,
+        "weight": 0.341391,
+        "role": "signal"
+      },
+      {
+        "name": "atr_norm",
+        "direction": -1,
+        "weight": 0.0,
+        "role": "risk_filter",
+        "threshold": 0.8
+      }
+    ],
+    "params": {
+      "rebalance": "W-FRI",
+      "hold_days": 5,
+      "top_n": 15,
+      "score_threshold": 65,
+      "percentile_window": 252
+    }
+  },
+  "metrics": {
+    "annual_return": 0.16813570035348996,
+    "sharpe": 0.8084469677810606,
+    "max_drawdown": -0.030340386675225484,
+    "win_rate": 0.45388337153043035,
+    "volatility": 0.12200246495910705,
+    "total_return": 0.04323603772097854,
+    "active_days": 13.571428571428571,
+    "trading_days": 61.0,
+    "active_ratio": 0.22491507072576744,
+    "rebalance_count": 13.142857142857142,
+    "active_rebalance_count": 2.857142857142857
+  },
+  "stability_score": 53.82397089724035,
+  "selected_at": "2026-03-23T06:29:19Z",
+  "effective_from": "2026-03-21",
+  "report_path": "data/reports/strategy_search/64fc1b4a-6c75-43e6-8098-b1f17f480457",
+  "inline_profile": {
+    "id": "search_babd9558",
+    "mode": "temporal_pool",
+    "description": "随机搜索候选 babd9558",
+    "source": "search_result",
+    "version": "1.0",
+    "factors": [
+      {
+        "name": "roc_10",
+        "direction": 1,
+        "weight": 0.202048,
+        "role": "signal"
+      },
+      {
+        "name": "price_vs_sma20",
+        "direction": 1,
+        "weight": 0.115425,
+        "role": "signal"
+      },
+      {
+        "name": "cci_20",
+        "direction": 1,
+        "weight": 0.341136,
+        "role": "signal"
+      },
+      {
+        "name": "volume_ma_ratio",
+        "direction": 1,
+        "weight": 0.341391,
+        "role": "signal"
+      },
+      {
+        "name": "atr_norm",
+        "direction": -1,
+        "weight": 0.0,
+        "role": "risk_filter",
+        "threshold": 0.8
+      }
+    ],
+    "params": {
+      "rebalance": "W-FRI",
+      "hold_days": 5,
+      "top_n": 15,
+      "score_threshold": 65,
+      "percentile_window": 252
+    }
+  }
+}

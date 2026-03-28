@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/factor_attribution_service.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.3, 0.7, 1.0, 252, 'alpha', 'alpha_beta', 'annual_return', 'avg_daily_return', 'benchmark', 'beta', 'close', 'contribution_ratio', 'count', 'cumulative_return', 'daily_alpha', 'daily_mean', 'daily_volatility', 'date', 'error', 'factor_contribution', 'future_return', 'has_benchmark', 'high_exposure_return', 'ic', 'ic_pvalue', 'interpretation', 'long_short_return', 'low_exposure_return', 'message', 'overall_stats', 'portfolio', 'portfolio_return', 'r_squared', 'return_by_stock', 'return_decomposition', 'sample_size', 'sh000001', 'sharpe', 'sharpe_ratio', 'stock_count', 'total_observations', 'volatility', 'volatility_annual', 'win_rate', '基准数据缺少close列', '对齐后数据不足', '数据不足以计算贡献度', '有效交易日不足', '没有可用的收益数据']

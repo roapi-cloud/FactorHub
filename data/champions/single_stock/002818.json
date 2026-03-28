@@ -1,0 +1,107 @@
+{
+  "champion_id": "4b77ee89-2b21-49f0-80c6-f7d9b20705d7",
+  "scope_type": "single_stock",
+  "scope_key": "002818",
+  "mode": "temporal_pool",
+  "profile_id": "search_6e76f0ef",
+  "config": {
+    "candidate_id": "6e76f0ef-90cb-4cc7-9f91-ee0bc5ff3708",
+    "id": "search_6e76f0ef",
+    "mode": "temporal_pool",
+    "description": "随机搜索候选 6e76f0ef",
+    "source": "search_result",
+    "version": "1.0",
+    "factors": [
+      {
+        "name": "momentum_20",
+        "direction": 1,
+        "weight": 0.276755,
+        "role": "signal"
+      },
+      {
+        "name": "rsi_14",
+        "direction": 1,
+        "weight": 0.367082,
+        "role": "signal"
+      },
+      {
+        "name": "volume_ma_ratio",
+        "direction": 1,
+        "weight": 0.356163,
+        "role": "signal"
+      },
+      {
+        "name": "atr_norm",
+        "direction": -1,
+        "weight": 0.0,
+        "role": "risk_filter",
+        "threshold": 0.8
+      }
+    ],
+    "params": {
+      "rebalance": "2W-FRI",
+      "hold_days": 20,
+      "top_n": 15,
+      "score_threshold": 60,
+      "percentile_window": 252
+    }
+  },
+  "metrics": {
+    "annual_return": 0.17671712292635755,
+    "sharpe": 1.175742558581877,
+    "max_drawdown": -0.04925937021964875,
+    "win_rate": 0.6063111606589867,
+    "volatility": 0.16057571952387345,
+    "total_return": 0.04146576828649553,
+    "active_days": 18.571428571428573,
+    "trading_days": 61.0,
+    "active_ratio": 0.3064782095144147,
+    "rebalance_count": 3.857142857142857,
+    "active_rebalance_count": 1.4285714285714286
+  },
+  "stability_score": 56.21985988663919,
+  "selected_at": "2026-03-23T06:41:53Z",
+  "effective_from": "2026-03-21",
+  "report_path": "data/reports/strategy_search/820172ac-71fb-489d-af1c-1c174e778fe8",
+  "inline_profile": {
+    "id": "search_6e76f0ef",
+    "mode": "temporal_pool",
+    "description": "随机搜索候选 6e76f0ef",
+    "source": "search_result",
+    "version": "1.0",
+    "factors": [
+      {
+        "name": "momentum_20",
+        "direction": 1,
+        "weight": 0.276755,
+        "role": "signal"
+      },
+      {
+        "name": "rsi_14",
+        "direction": 1,
+        "weight": 0.367082,
+        "role": "signal"
+      },
+      {
+        "name": "volume_ma_ratio",
+        "direction": 1,
+        "weight": 0.356163,
+        "role": "signal"
+      },
+      {
+        "name": "atr_norm",
+        "direction": -1,
+        "weight": 0.0,
+        "role": "risk_filter",
+        "threshold": 0.8
+      }
+    ],
+    "params": {
+      "rebalance": "2W-FRI",
+      "hold_days": 20,
+      "top_n": 15,
+      "score_threshold": 60,
+      "percentile_window": 252
+    }
+  }
+}

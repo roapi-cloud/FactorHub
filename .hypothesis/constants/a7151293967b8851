@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/factor_effectiveness_service.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.8, 'abs_ic', 'close', 'correlation', 'correlation_pvalue', 'count', 'dates', 'decay_analysis', 'decay_curve', 'error', 'event_response', 'excess_returns', 'future_return', 'holding_periods', 'ic', 'ic_mean', 'ic_positive_ratio', 'ic_std', 'ic_time_series', 'ic_values', 'ir', 'low_exposure_returns', 'period', 'period_days', 'scatter_plot', 'stock_code', 'threshold_percentile', 'threshold_value', 'x', 'y', '数据不足以计算相关性', '无法计算IC序列（横截面数据不足）', '无法计算衰减曲线', '没有可用的数据']

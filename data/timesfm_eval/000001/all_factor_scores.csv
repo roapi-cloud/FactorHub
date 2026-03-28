@@ -1,0 +1,6 @@
+﻿factor_name,historical_score,recommended_direction,predictive_corr_mean,abs_predictive_corr_mean,horizon_stability,regime_predictive_corr_mean,regime_abs_predictive_corr_mean,sign_consistency,selected,redundant_with,redundancy_correlation,abs_ic_mean,ic_mean,abs_ir,regime_abs_ic_mean
+momentum_20,92.0,-1,-0.046695,0.046695,1.897911,-0.110068,0.124903,1.0,True,,,0.046695,-0.046695,1.897911,0.124903
+timesfm_return_5d,76.0,1,0.040519,0.040519,4.175447,0.00707,0.027415,1.0,True,,,0.040519,0.040519,4.175447,0.027415
+macd_hist,55.0,1,0.005582,0.032766,0.146513,0.079127,0.079127,0.75,True,,,0.032766,0.005582,0.146513,0.079127
+timesfm_return_1d,42.0,1,0.023554,0.023554,1.734021,-0.043506,0.043506,1.0,False,timesfm_return_5d,0.880614,0.023554,0.023554,1.734021,0.043506
+roc_10,35.0,-1,-0.000144,0.029158,0.003968,0.061616,0.07333,0.25,True,,,0.029158,-0.000144,0.003968,0.07333

@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/factor_stability_service.py
+# hypothesis_version: 6.151.9
+
+[-0.05, 0.05, 0.5, 1.0, 120, 252, '1%', '10%', '5%', 'IC序列长度不足，至少需要20个数据点', 'adf_statistic', 'avg_p_value', 'bear', 'bull', 'close', 'comparisons', 'critical_values', 'cv', 'end', 'error', 'flat', 'future_return', 'interpretation', 'ir', 'is_stationary', 'ks', 'market_return', 'mean', 'mean_ic', 'method', 'n_comparisons', 'n_obs', 'n_periods', 'p_value', 'regime', 'segment1', 'segment2', 'stability_score', 'stable_ratio', 'start', 'statistic', 'std', 'std_ic', 'ttest', 'unknown', 'used_lag', 'window', '变异程度中等', '变异程度较低', '变异程度较高', '序列不平稳，存在单位根', '序列平稳，拒绝存在单位根的原假设', '没有有效数据']

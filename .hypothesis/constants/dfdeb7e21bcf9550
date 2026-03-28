@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/core/settings.py
+# hypothesis_version: 6.151.9
+
+[3.0, 252, '.env', '2020-01-01', '2024-12-31', 'akshare', 'cache', 'clip', 'config', 'data', 'db', 'ffill', 'reports', 'utf-8']

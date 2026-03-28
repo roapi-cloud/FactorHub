@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/temporal_scoring_service.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.14, 0.16, 0.18, 0.2, 0.22, 0.3, 0.35, 0.8, 1.0, 100.0, 100, 372, '%Y-%m-%d', 'atr_norm', 'bollinger_position', 'close', 'code', 'date', 'error', 'factors', 'force_index_ma', 'momentum_20', 'nan', 'pcts', 'price_vs_sma20', 'price_vwma_ratio', 'rank', 'score', 'stochastic_d', 'volume', 'volume_ma_ratio']

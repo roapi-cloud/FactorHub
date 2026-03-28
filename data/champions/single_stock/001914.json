@@ -1,0 +1,131 @@
+{
+  "champion_id": "2be1177b-cd27-4383-b2fc-07df7dc8cca5",
+  "scope_type": "single_stock",
+  "scope_key": "001914",
+  "mode": "temporal_pool",
+  "profile_id": "search_7ad43dc2",
+  "config": {
+    "candidate_id": "7ad43dc2-0932-4013-9f6d-eb9f4d0cc12f",
+    "id": "search_7ad43dc2",
+    "mode": "temporal_pool",
+    "description": "随机搜索候选 7ad43dc2",
+    "source": "search_result",
+    "version": "1.0",
+    "factors": [
+      {
+        "name": "momentum_20",
+        "direction": 1,
+        "weight": 0.238125,
+        "role": "signal"
+      },
+      {
+        "name": "price_vwma_ratio",
+        "direction": 1,
+        "weight": 0.022963,
+        "role": "signal"
+      },
+      {
+        "name": "deviation_from_ma20",
+        "direction": 1,
+        "weight": 0.264656,
+        "role": "signal"
+      },
+      {
+        "name": "force_index_ma",
+        "direction": 1,
+        "weight": 0.160181,
+        "role": "signal"
+      },
+      {
+        "name": "volume_ma_ratio",
+        "direction": 1,
+        "weight": 0.314075,
+        "role": "signal"
+      },
+      {
+        "name": "atr_norm",
+        "direction": -1,
+        "weight": 0.0,
+        "role": "risk_filter",
+        "threshold": 0.8
+      }
+    ],
+    "params": {
+      "rebalance": "2W-FRI",
+      "hold_days": 20,
+      "top_n": 5,
+      "score_threshold": 60,
+      "percentile_window": 252
+    }
+  },
+  "metrics": {
+    "annual_return": 0.3915215359390934,
+    "sharpe": 1.5510918153833353,
+    "max_drawdown": -0.06914461911523083,
+    "win_rate": 0.5849837147791112,
+    "volatility": 0.23534409442680382,
+    "total_return": 0.0946300659762604,
+    "active_days": 17.857142857142858,
+    "trading_days": 61.0,
+    "active_ratio": 0.29085578433377896,
+    "rebalance_count": 3.857142857142857,
+    "active_rebalance_count": 1.1428571428571428
+  },
+  "stability_score": 61.622125378561556,
+  "selected_at": "2026-03-23T04:53:15Z",
+  "effective_from": "2026-03-21",
+  "report_path": "data/reports/strategy_search/8191e188-2aa1-43e5-b8b7-517577ae1994",
+  "inline_profile": {
+    "id": "search_7ad43dc2",
+    "mode": "temporal_pool",
+    "description": "随机搜索候选 7ad43dc2",
+    "source": "search_result",
+    "version": "1.0",
+    "factors": [
+      {
+        "name": "momentum_20",
+        "direction": 1,
+        "weight": 0.238125,
+        "role": "signal"
+      },
+      {
+        "name": "price_vwma_ratio",
+        "direction": 1,
+        "weight": 0.022963,
+        "role": "signal"
+      },
+      {
+        "name": "deviation_from_ma20",
+        "direction": 1,
+        "weight": 0.264656,
+        "role": "signal"
+      },
+      {
+        "name": "force_index_ma",
+        "direction": 1,
+        "weight": 0.160181,
+        "role": "signal"
+      },
+      {
+        "name": "volume_ma_ratio",
+        "direction": 1,
+        "weight": 0.314075,
+        "role": "signal"
+      },
+      {
+        "name": "atr_norm",
+        "direction": -1,
+        "weight": 0.0,
+        "role": "risk_filter",
+        "threshold": 0.8
+      }
+    ],
+    "params": {
+      "rebalance": "2W-FRI",
+      "hold_days": 20,
+      "top_n": 5,
+      "score_threshold": 60,
+      "percentile_window": 252
+    }
+  }
+}

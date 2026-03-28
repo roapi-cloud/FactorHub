@@ -67,21 +67,34 @@ def main():
             return 1
 
         data = result.get("data", {})
-        ohlcv = data.get("ohlcv", [])
+        # API返回格式: {"index": [...dates], "columns": [...], "data": [[row], ...]}
+        dates = data.get("index", [])
+        columns = data.get("columns", [])
+        rows_data = data.get("data", [])
 
-        if not ohlcv:
+        if not dates or not rows_data:
             print(SkillOutput.error("未获得任何数据，请检查股票代码和日期范围"))
             return 1
+
+        # 将列表格式转换为字典列表
+        col_idx = {col: i for i, col in enumerate(columns)}
+        ohlcv = []
+        for date_str, row in zip(dates, rows_data):
+            item = {"date": date_str[:10]}  # 只取日期部分
+            for col in ["open", "high", "low", "close", "volume"]:
+                if col in col_idx:
+                    item[col] = row[col_idx[col]]
+            ohlcv.append(item)
 
         # 显示数据表格
         print(SkillOutput.section("数据明细"))
 
-        # 准备表格数据（只显示前20条）
+        # 准备表格数据（只显示最新20条）
         headers = ["日期", "开盘", "最高", "最低", "收盘", "成交量(万)"]
-        rows = []
+        table_rows = []
 
-        for item in ohlcv[-20:]:  # 最新的20条
-            rows.append([
+        for item in ohlcv[-20:]:
+            table_rows.append([
                 item.get("date", ""),
                 f"{item.get('open', 0):.2f}",
                 f"{item.get('high', 0):.2f}",
@@ -90,8 +103,7 @@ def main():
                 f"{item.get('volume', 0) / 10000:,.0f}" if item.get('volume') else "0"
             ])
 
-        rows.reverse()  # 从早到晚
-        print(SkillOutput.table(headers, rows))
+        print(SkillOutput.table(headers, table_rows))
 
         # 显示统计信息
         print(SkillOutput.section("数据统计"))

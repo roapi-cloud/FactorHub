@@ -1,0 +1,150 @@
+{
+  "id": "multi_ma_align_v1",
+  "mode": "temporal_pool",
+  "description": "多均线多头排列模板 - 5/10/20/60 均线多头 + 量能（个股因子注入）",
+  "source": "search_result",
+  "version": "1.0",
+  "factors": [
+    {
+      "name": "SMA20",
+      "direction": -1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "sma20_vs_sma60",
+      "direction": -1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "skewness_20",
+      "direction": -1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "EMA12",
+      "direction": -1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "ma120",
+      "direction": -1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "money_flow_ma",
+      "direction": 1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "adx_14",
+      "direction": 1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "downside_risk",
+      "direction": 1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "Mined_close_open_ratio_1",
+      "direction": -1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "momentum_acceleration",
+      "direction": 1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "stochastic_d",
+      "direction": 1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "volatility_10",
+      "direction": 1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "kurtosis_20",
+      "direction": -1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "ma_bias_10_60",
+      "direction": -1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "three_falling_candles",
+      "direction": -1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "volatility_change",
+      "direction": 1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "obv_slope",
+      "direction": 1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "var_95_20",
+      "direction": 1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "atr_14",
+      "direction": 1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "volume_shrink",
+      "direction": 1,
+      "weight": 0.05,
+      "role": "signal"
+    },
+    {
+      "name": "atr_norm",
+      "direction": -1,
+      "weight": 0.0,
+      "role": "risk_filter",
+      "threshold": 0.8
+    },
+    {
+      "name": "volume_ma_ratio",
+      "direction": 1,
+      "weight": 0.0,
+      "role": "risk_filter",
+      "threshold": 0.25
+    }
+  ],
+  "params": {
+    "rebalance": "2W-FRI",
+    "hold_days": 10,
+    "top_n": 10,
+    "score_threshold": 70,
+    "percentile_window": 252
+  }
+}

@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/analysis_service.py
+# hypothesis_version: 6.151.9
+
+[0.1, 0.8, 100, 252, '### 全局特征重要性排序\n\n', '### 因子IC统计\n\n', '%Y%m%d_%H%M%S', ',', 'IC>0占比', 'IC均值', 'IC序列', 'IC标准差', 'IC类型', 'IC绝对值均值', 'IR', 'SHAP not available', 'analysis_time', 'close', 'end_date', 'error', 'factor_data', 'factor_names', 'feature', 'feature_importance', 'feature_names', 'future_return_1', 'future_return_5', 'ic', 'ic_ir', 'ic_stats', 'importance', 'isoformat', 'mean', 'metadata', 'model_score', 'month', 'monthly_ic', 'records', 'reg:squarederror', 'rolling_ir', 'rolling_window', 'shap', 'shap_values', 'start_date', 'stock_code', 'stock_codes', 'to_dict', 'tolist', 'utf-8', 'w', 'year', '| 排名 | 特征名称 | 重要性 |\n', '时序IC（单股票）', '未能获取任何有效的因子数据', '横截面IC（多股票）']

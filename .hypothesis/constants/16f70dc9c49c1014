@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/api/routers/portfolio.py
+# hypothesis_version: 6.151.9
+
+[0.0, 1e-08, 0.01, 1.0, 252, 400, 404, 500, '/compare-methods', '/composite-score', '/optimize-weights', 'annual_return', 'close', 'composite_score', 'composite_stats', 'data', 'dates', 'equal_weight', 'factor', 'factors', 'ic', 'ic_mean', 'ic_std', 'ic_weight', 'index', 'ir', 'ir_weight', 'max', 'max_return', 'max_sharpe', 'mean', 'method', 'metrics', 'min', 'min_variance', 'monthly', 'results', 'return', 'returns', 'sharpe_ratio', 'std', 'stock_code', 'success', 'values', 'volatility', 'weights', '未找到任何有效的因子定义', '未获取到数据', '没有有效的因子数据']

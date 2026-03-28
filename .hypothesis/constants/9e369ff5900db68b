@@ -1,0 +1,4 @@
+# file: /Users/fengzhi/Downloads/git/FactorHub/backend/services/portfolio_analysis_service.py
+# hypothesis_version: 6.151.9
+
+[0.0, 1e-08, 0.03, 0.05, 1.0, 252, 'IC加权', 'annual_return', 'benchmark', 'beta', 'concentration', 'cvar_95', 'downside_volatility', 'equal_weight', 'error', 'expected_return', 'expected_volatility', 'factor_exposure', 'factor_exposures', 'factor_stats', 'gini_coefficient', 'herfindahl_index', 'ic_weight', 'industry', 'industry_exposure', 'ir', 'max_drawdown', 'max_exposure', 'max_sharpe', 'mean', 'method', 'min_exposure', 'min_variance', 'note', 'portfolio', 'risk_metrics', 'risk_parity', 'sharpe_ratio', 'sharpe_ratios', 'std', 'stock_code', 'top10_concentration', 'top3_concentration', 'tracking_error', 'var_95', 'volatility', 'weight', 'weights', '因子收益率为空', '基于方差倒数的简化最小方差', '最大夏普', '最小方差', '等权重', '等权重分配', '风险平价']
