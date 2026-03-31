@@ -5,7 +5,7 @@ import hashlib
 import ssl
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Callable
 import pandas as pd
 import requests
 from requests.adapters import HTTPAdapter
@@ -183,6 +183,77 @@ class DataService:
 
         except Exception as e:
             raise ValueError(f"获取股票 {stock_code} 数据失败: {e}")
+
+    def get_enriched_stock_data(
+        self,
+        stock_code: str,
+        start_date: str,
+        end_date: str,
+        external_features: Optional[pd.DataFrame] = None,
+        external_fetcher: Optional[Callable[[str, str, str], pd.DataFrame]] = None,
+        use_cache: bool = True,
+    ) -> pd.DataFrame:
+        """
+        获取增强后的股票数据（统一数据层入口）
+
+        Args:
+            stock_code: 股票代码
+            start_date: 开始日期，格式 "YYYY-MM-DD"
+            end_date: 结束日期，格式 "YYYY-MM-DD"
+            external_features: 外部特征数据（可选）
+            external_fetcher: 外部数据拉取函数（可选）
+            use_cache: 是否使用缓存
+
+        Returns:
+            合并外部特征后的 DataFrame
+        """
+        base_df = self.get_stock_data(
+            stock_code=stock_code,
+            start_date=start_date,
+            end_date=end_date,
+            use_cache=use_cache,
+        )
+
+        if external_fetcher is not None:
+            fetched_df = external_fetcher(stock_code, start_date, end_date)
+            base_df = self._merge_external_features(base_df, fetched_df)
+
+        if external_features is not None:
+            base_df = self._merge_external_features(base_df, external_features)
+
+        return base_df
+
+    def _merge_external_features(
+        self,
+        base_df: pd.DataFrame,
+        external_df: Optional[pd.DataFrame],
+    ) -> pd.DataFrame:
+        """将外部特征按日期合并到行情数据中"""
+        if external_df is None or len(external_df) == 0:
+            return base_df
+
+        feature_df = external_df.copy()
+
+        # 支持 date 列或 datetime index 两种输入
+        if "date" in feature_df.columns:
+            feature_df["date"] = pd.to_datetime(feature_df["date"])
+            feature_df = feature_df.set_index("date")
+        elif not isinstance(feature_df.index, pd.DatetimeIndex):
+            raise ValueError("外部特征数据必须包含 date 列或使用 DatetimeIndex")
+
+        feature_df.index = pd.to_datetime(feature_df.index)
+        feature_df = feature_df.sort_index()
+
+        # 避免覆盖基础行情列
+        reserved_columns = {"open", "high", "low", "close", "volume", "amount"}
+        conflict_columns = reserved_columns.intersection(feature_df.columns)
+        if conflict_columns:
+            raise ValueError(
+                f"外部特征字段与基础行情字段冲突: {sorted(conflict_columns)}"
+            )
+
+        merged_df = base_df.join(feature_df, how="left")
+        return merged_df
 
     def _normalize_stock_code(self, code: str) -> str:
         """标准化股票代码格式"""
