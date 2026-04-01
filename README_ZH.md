@@ -520,6 +520,31 @@ pnpm dev
 
 前端将在 http://localhost:5173 启动
 
+
+### 离线导出因子公式与代码（示例）
+
+如果你有外部输入数据（CSV），或仅想快速生成演示结果，可直接运行：
+
+```bash
+python backend/examples/offline_factor_export_example.py
+# 或指定外部CSV
+python backend/examples/offline_factor_export_example.py --csv data/sample_ohlcv.csv --limit 12
+```
+
+脚本会在 `data/reports/` 下输出两类文件（格式保持不变）：
+
+- `offline_generated_formulas_*.json`：因子公式与元数据
+- `offline_generated_code_*.py`：可执行的因子计算函数模板
+
+同时会将结果直接写入 SQLite（`data/db/factorflow.db`）的 `generated_factors` 表，
+并在脚本函数里集中定义默认字段值（如 `is_valid=0`、`is_saved=0`、验证指标为空），
+不改动现有 API/Service 接口。
+如需仅导出文件不写库：
+
+```bash
+python backend/examples/offline_factor_export_example.py --no-save-db
+```
+
 ### 访问应用
 
 启动成功后，访问：
