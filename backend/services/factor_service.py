@@ -15,6 +15,7 @@ from backend.models.factor import FactorModel
 from backend.repositories.factor_repository import FactorRepository
 from backend.services.data_service import data_service
 from backend.services.factor_version_service import factor_version_service
+from backend.services.qlib_factor_service import qlib_factor_service
 
 # 配置日志
 logger = logging.getLogger(__name__)
@@ -1457,6 +1458,23 @@ class FactorService:
             except Exception as e:
                 logger.warning(f"为股票 {code} 计算因子失败: {e}")
         return results
+
+    def calculate_qlib_factor_set(
+        self,
+        stock_codes: List[str],
+        start_date: str,
+        end_date: str,
+        factor_set: str = "Alpha158",
+        factor_names: Optional[List[str]] = None,
+    ) -> pd.DataFrame:
+        """直接调用 qlib 提取预定义因子集。"""
+        return qlib_factor_service.generate_qlib_factors(
+            stock_codes=stock_codes,
+            start_date=start_date,
+            end_date=end_date,
+            factor_set=factor_set,
+            factor_names=factor_names,
+        )
 
 
 # 全局因子服务实例
